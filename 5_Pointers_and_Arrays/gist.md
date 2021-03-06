@@ -40,9 +40,10 @@
 * However, there are some differences. `pa=a` and `pa++` are legal. But, `a=pa` and `a++` are illegal since array name `a` is not a variable.
 * If you pass an array to a function, actually __address of the 1st element__ is passed in C. In fact, a __local copy__ of a variable pointing to the 1st element 
   is created by the function.
-* It is possible to pass a subarray to a function as :`func(&a[2])` or `func(a+2)`. Such a function can be declared as `func(int arr[])` or `func(int *arr)`.
+* It is possible to pass a subarray to a function as : `func(&a[2])` or `func(a+2)`. Such a function can be declared as `func(int arr[])` or `func(int *arr)`.
   It is of no consequence that the passed parameter refers to a larger array. The latter declaration is preferred because it is faster.
 
+![Image](https://latex.codecogs.com/svg.latex?\bigcap&space;\cup)
 ## Important points
 
 * A pointer to an int points only to the 1st byte.
