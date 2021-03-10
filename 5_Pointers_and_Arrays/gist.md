@@ -6,7 +6,7 @@
 * The code `ptr = &c` assigns the address of `c` to `ptr` (`&` is called the "address of" operator).
 * `*ptr` gives the value stored in  `c` (`*` is called the dereferencing/indirection operator).
 * Hence, `&c` is a pointer to `c` and `*ptr` is the value to which `ptr` points at.
-* `int *ptr` should be read as : The expression `*ptr` is an `int`.
+* `int *ptr` should be read as : The expression `*ptr` is an `int` or equivalently as : `ptr` is a pointer to type `int`.
 * A pointer is constrained to point to a particular type of object (except of `void*` which can point to any kind but cannot be derefenced).
 * Unary operators `*` and `&` have higher precedence than mathematical operators. So, an expression like `*ptr = *ptr+5` increments the value of `c` by `5`.
 * `++*ptr` and `(*ip)++` also increment the value of `c` by `1`. Parantheses are necessary in the 2nd case otherwise the value of ip would be increased by 1 (?? check)
